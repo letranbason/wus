@@ -11,3 +11,25 @@
         }
     }
 }
+@media (max-width: 767px) {
+        .banner {
+            overflow: hidden;
+            background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+
+            .slider_banner {
+                margin: 0 0%;
+                width: 90%;
+                .item{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .slick-dots {
+                margin: 0;
+                }
+            }
+        }
+
+    }

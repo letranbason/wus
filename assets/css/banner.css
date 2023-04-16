@@ -52,4 +52,24 @@
 }
 .banner .slider_banner .slick-dots {
   margin: 0 -27%;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+  }
+  .banner .slider_banner {
+    margin: 0 0%;
+    width: 90%;
+  }
+  .banner .slider_banner .item {
+    width: 100%;
+  }
+  .banner .slider_banner .item img {
+    width: 100%;
+  }
+  .banner .slider_banner .slick-dots {
+    margin: 0;
+  }
 }/*# sourceMappingURL=banner.css.map */
