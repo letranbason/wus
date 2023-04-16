@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Bold.eot") format("eot"), url("../fonts/SFProDisplay-Bold.ttf") format("ttf"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Medium.eot") format("eot"), url("../fonts/SFProDisplay-Medium.ttf") format("ttf"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay";
+  src: url("../fonts/SFProDisplay-Regular.eot") format("eot"), url("../fonts/SFProDisplay-Regular.ttf") format("ttf"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%, 20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%, 40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60% {
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%, 100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+.event {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.event .button-event {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event .button-event .button {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  position: relative;
+}
+.event .button-event .button.button-fire {
+  padding: 0;
+}
+.event .button-event .button.button-fire span {
+  background: white;
+  color: black;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30%;
+  align-items: flex-end;
+  transition: all 0.5s ease;
+  position: relative;
+  padding: 10px;
+}
+.event .button-event .button.button-fire::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 50%;
+  top: 10px;
+  right: 10px;
+  background: url(../images/fire.png) no-repeat top right/contain;
+  transition: all 0.5s ease;
+}
+.event .button-event .button.button-fire::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.event .button-event .button.button-fire:hover span {
+  background: #EB5E2A;
+}
+.event .button-event .button.button-fire:hover::before {
+  transform: translate3D(7px, -7px, 0);
+}
+.event .button-event .button.button-calendar {
+  padding: 0;
+}
+.event .button-event .button.button-calendar span {
+  background: white;
+  color: black;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30%;
+  align-items: flex-end;
+  transition: all 0.5s ease;
+  position: relative;
+  padding: 10px;
+}
+.event .button-event .button.button-calendar::before {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 10%;
+  top: 10px;
+  right: 10px;
+  background: url(../images/fire.png) no-repeat top right/contain;
+  transition: all 0.5s ease;
+  z-index: 3;
+}
+.event .button-event .button.button-calendar::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.event .button-event .button.button-calendar:hover span {
+  background: #EB5E2A;
+}
+.event .button-event .button.button-calendar:hover::before {
+  transform: translate3D(7px, -7px, 0);
+}/*# sourceMappingURL=events.css.map */

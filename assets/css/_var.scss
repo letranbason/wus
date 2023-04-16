@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Bold.eot') format('eot'),
+      url('../fonts/SFProDisplay-Bold.ttf') format('ttf'),
+      url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+      url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Medium.eot') format('eot'),
+      url('../fonts/SFProDisplay-Medium.ttf') format('ttf'),
+      url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+      url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SFProDisplay-Regular.eot') format('eot'),
+      url('../fonts/SFProDisplay-Regular.ttf') format('ttf'),
+      url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+      url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property){
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+@mixin borderRadius($property){
+  border-radius: $property;
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  -ms-border-radius: $property;
+  -o-border-radius: $property;
+}
+
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%, 20%{
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%, 40%{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60%{
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%, 100%{
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
+
+
+
+
+
+$font-family:'SFProDisplay' , sans-serif;
+$primary_color:#EB5E2A;
+$color-text:#434343;
+$color-date:#8C8C8C;

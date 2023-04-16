@@ -1,0 +1,13 @@
+@import 'var';
+
+.banner{
+    overflow: hidden;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
+    .slider_banner {
+        margin: 0 27%;
+        width: 100%;
+        .slick-dots{
+            margin: 0 -27%;
+        }
+    }
+}
