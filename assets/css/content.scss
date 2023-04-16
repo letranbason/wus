@@ -3,6 +3,7 @@
 .content{
     .grid-container {
         display: grid;
+        flex-wrap: wrap;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 16px;
     }
@@ -22,4 +23,31 @@
             }
         }
     }
+}
+
+@media (max-width: 767px) {
+    .content{
+    .grid-container {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    .grid-item {
+        border: 1px solid black;
+        padding: 16px;
+        border-radius: 13px;
+        text-align: center;
+        &:hover{
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        a{
+            text-decoration: none;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
 }

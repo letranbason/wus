@@ -72,4 +72,7 @@
   .banner .slider_banner .slick-dots {
     margin: 0;
   }
+  .banner .slider_banner .slick-next {
+    right: 0%;
+  }
 }/*# sourceMappingURL=banner.css.map */
