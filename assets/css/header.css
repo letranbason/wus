@@ -95,7 +95,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-right: 50%;
+    margin-right: 80%;
     width: 20%;
   }
   .header .search-container form input[type=text] {

@@ -4,10 +4,22 @@
     overflow: hidden;
     background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
     .slider_banner {
-        margin: 0 27%;
         width: 100%;
+        .item{
+            .content{
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
         .slick-dots{
             margin: 0 -27%;
+        }
+    }
+    .slick-dotted{
+        .slick-slider{
+            margin-bottom: 0;
         }
     }
 }

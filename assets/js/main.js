@@ -3,7 +3,7 @@ var App = {
                 jQuery('.slider_banner').slick({
                     autoplay: true,
                     autoplaySpeed: 3000,
-                    dots: true,
+                    dots: false,
                     arrows: false,
                     responsive: [
                         {

@@ -47,11 +47,17 @@
   background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
 }
 .banner .slider_banner {
-  margin: 0 27%;
   width: 100%;
+}
+.banner .slider_banner .item .content img {
+  max-width: 100%;
+  height: auto;
 }
 .banner .slider_banner .slick-dots {
   margin: 0 -27%;
+}
+.banner .slick-dotted .slick-slider {
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {

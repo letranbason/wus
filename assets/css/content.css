@@ -64,6 +64,12 @@
 .content .grid-item a img {
   width: 100%;
 }
+.content .grid-item a img .infor .date {
+  color: #8C8C8C;
+}
+.content .grid-item a img .infor span {
+  color: #434343;
+}
 
 @media (max-width: 767px) {
   .content .grid-container {
@@ -72,20 +78,16 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
   }
-  .content .grid-item {
-    border: 1px solid black;
-    padding: 16px;
-    border-radius: 13px;
-    text-align: center;
-  }
-  .content .grid-item:hover {
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-  }
   .content .grid-item a {
     text-decoration: none;
   }
   .content .grid-item a img {
     width: 100%;
+  }
+  .content .grid-item a img .infor .date {
+    color: #8C8C8C;
+  }
+  .content .grid-item a img .infor span {
+    color: #434343;
   }
 }/*# sourceMappingURL=content.css.map */
