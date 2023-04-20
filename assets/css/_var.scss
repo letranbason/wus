@@ -83,3 +83,61 @@ $font-family:'SFProDisplay' , sans-serif;
 $primary_color:#EB5E2A;
 $color-text:#434343;
 $color-date:#8C8C8C;
+
+
+
+button {
+    font-size: 14px;
+}
+.disabled {
+    color: #F0F0F0;
+    opacity: 0.5;
+    pointer-events: none;
+    background: #F0F0F0;
+}
+
+.default {
+    background-color: #ffffff;
+    border: 2px solid #EB5E2A;
+    color: #EB5E2A;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    line-height: 14px;
+    &:hover {
+        background-color: #BE4C20;
+        color: #ffffff;
+        border-color:#BE4C20;
+    }
+    &:focus {
+        background-color: #EB5E2A;
+        color: #ffffff;
+    }
+    
+    &:active {
+        &:hover {
+        background-color: #BE4C20;
+        border-color: #BE4C20;
+        color: #ffffff;
+        }
+    }
+
+    &.large_size {
+        @extend .default;
+        width: 115px;
+        height: 40px;
+    }
+
+    &.medium_size {
+        @extend .default;
+        width: 115px;
+        height: 32px;
+    }
+
+    &.small_size {
+        @extend .default;
+        width: 115px;
+        height: 24px;
+    }
+
+}

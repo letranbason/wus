@@ -42,106 +42,75 @@
     transform: translateY(-100%) scale(0.5);
   }
 }
+button {
+  font-size: 14px;
+}
+
+.disabled {
+  color: #F0F0F0;
+  opacity: 0.5;
+  pointer-events: none;
+  background: #F0F0F0;
+}
+
+.default, .default.small_size, .default.medium_size, .default.large_size {
+  background-color: #ffffff;
+  border: 2px solid #EB5E2A;
+  color: #EB5E2A;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  line-height: 14px;
+}
+.default:hover {
+  background-color: #BE4C20;
+  color: #ffffff;
+  border-color: #BE4C20;
+}
+.default:focus {
+  background-color: #EB5E2A;
+  color: #ffffff;
+}
+.default:active:hover {
+  background-color: #BE4C20;
+  border-color: #BE4C20;
+  color: #ffffff;
+}
+.default.large_size {
+  width: 115px;
+  height: 40px;
+}
+.default.medium_size {
+  width: 115px;
+  height: 32px;
+}
+.default.small_size {
+  width: 115px;
+  height: 24px;
+}
+
 .event {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 5%;
 }
-.event .button-event {
+.event .button_event {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  padding-bottom: 5%;
 }
-.event .button-event .button {
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
-  border: none;
-  font-size: 14px;
-  padding: 10px;
-  position: relative;
-}
-.event .button-event .button.button-fire {
-  padding: 0;
-}
-.event .button-event .button.button-fire span {
-  background: white;
-  color: black;
-  width: 100%;
-  height: 10px;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 30%;
-  align-items: flex-end;
-  transition: all 0.5s ease;
-  position: relative;
-  padding: 10px;
-}
-.event .button-event .button.button-fire::before {
-  position: absolute;
-  content: "";
-  width: 50%;
-  height: 50%;
-  top: 10px;
-  right: 10px;
-  background: url(../images/fire.png) no-repeat top right/contain;
-  transition: all 0.5s ease;
-}
-.event .button-event .button.button-fire::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all 0.5s ease;
-}
-.event .button-event .button.button-fire:hover span {
-  background: #EB5E2A;
-}
-.event .button-event .button.button-fire:hover::before {
-  transform: translate3D(7px, -7px, 0);
-}
-.event .button-event .button.button-calendar {
-  padding: 0;
-}
-.event .button-event .button.button-calendar span {
-  background: white;
-  color: black;
-  width: 100%;
-  height: 10px;
-  display: flex;
-  border: 1px solid black;
-  border-radius: 30%;
-  align-items: flex-end;
-  transition: all 0.5s ease;
-  position: relative;
-  padding: 10px;
-}
-.event .button-event .button.button-calendar::before {
-  position: absolute;
-  content: "";
-  width: 10%;
-  height: 10%;
-  top: 10px;
-  right: 10px;
-  background: url(../images/fire.png) no-repeat top right/contain;
-  transition: all 0.5s ease;
-  z-index: 3;
-}
-.event .button-event .button.button-calendar::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all 0.5s ease;
-}
-.event .button-event .button.button-calendar:hover span {
-  background: #EB5E2A;
-}
-.event .button-event .button.button-calendar:hover::before {
-  transform: translate3D(7px, -7px, 0);
+@media (min-width: 320px) and (max-width: 768px) {
+  .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .event .button_event {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=events.css.map */
